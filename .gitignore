@@ -1,1 +1,6 @@
 .DS_Store
+
+# Ignore the compiled files
+/app/scripts
+/app/styles
+/app/views
