@@ -1,4 +1,4 @@
-window.GridOverlay = (vHeight = 18, canvasId = "gridOverlayCanvas")->
+window.GSGridOverlay = (vHeight = 18, canvasId = "gridOverlayCanvas")->
   window.console.log("working")
 
   new_canvas = document.createElement("canvas")

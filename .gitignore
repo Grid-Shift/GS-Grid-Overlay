@@ -4,3 +4,6 @@
 /app/scripts
 /app/styles
 /app/views
+
+# Ignore temp files
+.sass-cache
