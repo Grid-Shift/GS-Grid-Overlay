@@ -6,11 +6,18 @@
   %body
     %form 
       %h1 Grid Settings
-      %label{:for => "gs-baseline-grid-size"} Baseline every
-      %input#gs-baseline-grid-size{type: "number", name: "gs-baseline-grid-size", value: "18"}
-      %input{type: "reset", value: "reset"} 
-      %input{type: "reset", value: "update"} 
-
-    %a{:href => "#"} GS Grid Overlay by Grid Shift 
+      %ul.field-list 
+        %li.field
+          %label{for: "gs-grid-checkbox"}
+            %input#gs-grid-checkbox{type: "checkbox", name: "gs-grid-checkbox"}
+            Show Grid
+        %li.field 
+          %label{:for => "gs-baseline-grid-size"} Baseline every
+          %input#gs-baseline-grid-size{type: "number", name: "gs-baseline-grid-size", value: "18", autofocus: true}
+        %li.field
+          %input{type: "submit", value: "update"}
+          %input{type: "reset", value: "reset"}
+    %p
+      %a{:href => "#"} GS Grid Overlay by Grid Shift 
 
     %script{src: "../scripts/popup.js"}
