@@ -22,6 +22,17 @@
     "default_popup": "views/popup.html"
   },
 
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["scripts/gs-grid-overlay.js"]
+    },
+    {
+      "matches": ["*://*/*"],
+      "js": ["scripts/background.js"]
+    }
+  ],
+
   // Optional
   "author": "Grid Shift"
 }
