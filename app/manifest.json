@@ -12,6 +12,10 @@
     "128": "images/icon128.png"
   },
 
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+
   // Pick one (or none)
   "browser_action": {
     "default_icon": {
@@ -26,10 +30,6 @@
     {
       "matches": ["*://*/*"],
       "js": ["scripts/gs-grid-overlay.js"]
-    },
-    {
-      "matches": ["*://*/*"],
-      "js": ["scripts/background.js"]
     }
   ],
 
